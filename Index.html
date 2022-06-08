@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div>
+    <h1>Table</h1>
+  <Label>Enter Number to Print Table</Label> <br>
+   <input min="2" type="number"  id="InputNum1"><br>
+   <Label>Enter The End Number </Label> <br>
+   <input min="2" type="number"  id="input2"><br>
+   
+ <button onclick="PrintTable()">
+     Print Table
+ </button><br>
+ <p id="Table"></p>
+</div>
+    <script>
+        function PrintTable(){
+            let InputNum1 = document.querySelector('#InputNum1').value
+            let input2 = document.querySelector('#input2').value
+            
+            let Result =""
+        for( let  i = 0 ;i < input2 ; i++ ) {
+
+           Result =   (`${Result}   ${InputNum1} x ${i + 1} = ${ InputNum1 * (i + 1)} \n `) ;
+           
+             
+         }
+      
+           
+         document.getElementById('Table').innerText = Result
+                                                 
+        }
+    </script>
+</body>
+</html>
