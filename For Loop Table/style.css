@@ -1,0 +1,35 @@
+input{
+
+ padding: 3px;
+width: 100px;
+display: inline-block;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+button{
+    margin-top: 12px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+button:hover{color: snow;
+opacity: 0.5;}
+div{
+  padding-inline-start: 1pc;
+  margin-left: 50%;
+}
+
+p{
+    
+  
+ font-size: medium;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+label{
+    font-size: large;
+    font-weight: bold;
+}
